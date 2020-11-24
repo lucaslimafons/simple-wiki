@@ -1,0 +1,31 @@
+{
+  "name": "simple-wiki",
+  "version": "1.0.0",
+  "description": "RoonLabs NodeJS Test",
+  "author": "Lucas Lima Fonseca",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon ./server/app.js",
+    "test": "sequelize db:migrate --env test && sequelize db:seed:all --env test && NODE_ENV=test mocha --exit",
+    "migrate": "sequelize db:migrate --env $1",
+    "undo_migrate": "sequelize db:migrate:undo --env $1",
+    "seeder": "sequelize db:seed:all --env $1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "debug": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mocha": "^8.2.1",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0",
+    "should": "^13.2.3",
+    "sqlite3": "^5.0.0",
+    "supertest": "^6.0.1",
+    "winston": "^3.3.3"
+  }
+}
