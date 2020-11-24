@@ -1,4 +1,4 @@
-# G2i Acronym
+# RoonLabs Wiki
 
 ### Technologies
 > Nodejs v12, MySQL
@@ -21,15 +21,6 @@ $ npm run migrate $1
 Example:
 ```
 $ npm run migrate development
-```
-
-3.2.
-```
-$ npm run seeder $1
-```
-Example:
-```
-$ npm run seeder development
 ```
 
 (Please take a look on config/database.js file.)
